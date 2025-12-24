@@ -2,7 +2,7 @@
 <html lang="ta">
 <head>
   <meta charset="UTF-8">
-  <title>ஸ்ரீ ஏகாம்பரநாதர் ஆலயம்</title>
+  <title>ஸ்ரீ ஏகாம்பரநாதர் ஆலயம் | Shree yegabaranadhar temple </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Tailwind CDN -->
@@ -74,24 +74,96 @@
   <section class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
 
     <!-- TEXT SIDE -->
-    <div class="max-w-xl">
-      <h2 class="text-xl md:text-2xl font-bold mb-4 flex items-center gap-2">
-        🛕 Welcome to ஸ்ரீ ஏகாம்பரநாதர் ஆலயம்
-      </h2>
-         <br> <br>
+    <!-- TEXT SIDE -->
+<div class="max-w-xl">
 
-      <p class="text-gray-700 leading-relaxed text-sm md:text-base" style="font-size: larger;">
-        For more than 10 years,
-        <span class="font-semibold">[Shree yegabaranadhar temple]</span>
-        has been dedicated to preserving spiritual values, temple traditions,
-        and sacred architecture.
-      </p>
+  <!-- Language Toggle Buttons -->
+  <div class="flex gap-3 mb-6">
+    <button
+      id="btnEng"
+      onclick="showEnglish()"
+      class="px-4 py-2 rounded-lg bg-[#7b2d26] text-white text-sm font-semibold"
+    >
+      ENGLISH
+    </button>
 
-      <p class="text-gray-700 leading-relaxed text-sm md:text-base mt-3" style="font-size: larger;" >
-        What began as a divine vision has now taken strong shape through
-        continuous dedication, devotion, and community support.
-      </p>
-    </div>
+    <button
+      id="btnTam"
+      onclick="showTamil()"
+      class="px-4 py-2 rounded-lg bg-gray-200 text-gray-700 text-sm font-semibold"
+    >
+      தமிழ்
+    </button>
+  </div>
+
+  <!-- ENGLISH CONTENT -->
+  <div id="contentEng">
+    <h2 class="text-xl md:text-2xl font-bold mb-4 flex items-center gap-2">
+      🛕 Welcome to ஸ்ரீ ஏகாம்பரநாதர் ஆலயம்
+    </h2>
+    <p class="text-gray-700 leading-relaxed text-base">
+This sacred temple was initiated in the year 2014 through
+the dedicated efforts of Mr. C. Murugan and by the divine grace of the Lord.
+</p>
+
+<p class="text-gray-700 leading-relaxed text-base mt-3">
+With the wholehearted support, devotion, and unity of devotees,
+the temple construction has progressed steadily over the years.
+</p>
+
+<p class="text-gray-700 leading-relaxed text-base mt-3">
+At present, nearly 70% of the construction work has been completed.
+The remaining 20% of the work is yet to be finished.
+</p>
+
+<p class="text-gray-700 leading-relaxed text-base mt-3">
+The sincere contributions, donations, and prayers of devotees
+are essential to complete this sacred mission.
+</p>
+
+<p class="text-gray-700 leading-relaxed text-base mt-3">
+With the blessings of the Lord and the collective efforts of devotees,
+this temple will soon be completed and shine as a divine center
+radiating spiritual light.
+</p>
+
+  </div>
+
+  <!-- TAMIL CONTENT -->
+  <div id="contentTam" class="hidden">
+    <h2 class="text-xl md:text-2xl font-bold mb-4 flex items-center gap-2">
+      🛕 ஸ்ரீ ஏகாம்பரநாதர் ஆலயம்
+    </h2>
+    <p class="text-gray-700 leading-relaxed text-base">
+இந்த புனித திருக்கோவில் 2014 ஆம் ஆண்டு,
+திரு. சி. முருகன் அவர்களின் பெருமுயற்சியாலும்,
+இறைவனின் திருவருளாலும் தொடங்கப்பட்டது.
+</p>
+
+<p class="text-gray-700 leading-relaxed text-base mt-3">
+பக்தர்களின் ஒருமித்த ஆதரவு மற்றும் அர்ப்பணிப்பின் மூலம்,
+இத்திருப்பணி இன்று வரை சிறப்பாக முன்னேறி வருகிறது.
+</p>
+
+<p class="text-gray-700 leading-relaxed text-base mt-3">
+தற்போது சுமார் 70% கட்டுமானப் பணிகள் நிறைவடைந்துள்ளன.
+மீதமுள்ள 20% பணிகள் விரைவில் நிறைவேற்றப்பட வேண்டியுள்ளது.
+</p>
+
+<p class="text-gray-700 leading-relaxed text-base mt-3">
+பக்தர்களின் மனமார்ந்த ஆதரவும், தானமும், அர்ப்பணிப்பும்
+இந்த புனிதப் பணியை முழுமை அடைய உதவும்.
+</p>
+
+<p class="text-gray-700 leading-relaxed text-base mt-3">
+இறைவனின் அருளாலும், பக்தர்களின் ஒருமித்த முயற்சியாலும்,
+இத்திருக்கோவில் விரைவில் முழுமை பெற்று
+ஆன்மீக ஒளியை வீசும் திருத்தலமாக விளங்கும்.
+</p>
+
+  </div>
+
+</div>
 
     <!-- IMAGE SIDE -->
   <div class="w-full">
@@ -99,7 +171,7 @@
     src="img/hero-image.jpeg"
     alt="Temple"
     class="w-full h-[220px] sm:h-[280px] md:h-[320px] lg:h-[380px]
-           object-cover rounded-xl shadow-md"
+           object-cover rounded-xl shadow-md mt-10"
   />
 </div>
 
@@ -108,104 +180,114 @@
   <!-- Divider -->
   <hr class="my-12">
 
-  <!-- Our Journey -->
-  <section class="max-w-3xl">
-    <h3 class="text-lg md:text-xl font-bold mb-4 flex items-center gap-2" style="font-size: x-large;">
-      🌿 Our Journey
-    </h3>
+<!-- Our Journey -->
+<section class="max-w-4xl mx-auto px-4 py-8">
 
-    <p class="text-gray-700 leading-relaxed text-sm md:text-base mb-3" style="font-size: larger;">
-      The planning and foundational work of the temple began over a decade ago
-      with the aim of creating a peaceful spiritual center for devotees.
-      After years of preparation, approvals, and groundwork, active construction
-      officially commenced in 2024.
-    </p>
+  <h3 class="text-xl font-bold mb-6 flex items-center gap-2">
+    🌿 Our Journey
+  </h3>
 
-    <p class="text-gray-700 leading-relaxed text-sm md:text-base" style="font-size: larger;">
-      Since then, with the blessings of the divine and the collective efforts
-      of devotees and supporters, nearly
-      <span class="font-semibold">70%</span>
-      of the temple construction has been successfully completed.
-    </p>
-  </section>
+  <div class="relative border-l-2 border-green-600 pl-6 space-y-6">
+
+    <!-- Step 1 -->
+    <div class="relative">
+      <p class="text-gray-700 leading-relaxed">
+        The vision for this sacred temple was conceived more than a decade ago,
+        with the aim of creating a peaceful spiritual center for devotees.
+      </p>
+    </div>
+
+    <div class="pl-1 text-green-600">↓</div>
+
+    <!-- Step 2 -->
+    <div class="relative">
+      <p class="text-gray-700 leading-relaxed">
+        Years were dedicated to planning, approvals, and groundwork,
+        laying a strong foundation rooted in faith and perseverance.
+      </p>
+    </div>
+
+    <div class="pl-1 text-green-600">↓</div>
+
+    <!-- Step 3 -->
+    <div class="relative"></div>
+      <p class="text-gray-700 leading-relaxed">
+        Active construction officially commenced in 2024,
+        marking a significant milestone in the temple’s journey.
+      </p>
+    </div>
+
+    <div class="pl-1 text-green-600">↓</div>
+
+    <!-- Step 4 -->
+    <div class="relative">
+      <p class="text-gray-700 leading-relaxed">
+        Every stone, pillar, and sculpture reflects the patience,
+        dedication, and heartfelt offerings of devoted souls.
+      </p>
+    </div>
+
+    <div class="pl-1 text-green-600">↓</div>
+
+    <!-- Step 5 -->
+    <div class="relative">
+      <p class="text-gray-700 leading-relaxed">
+        At present, nearly <span class="font-semibold text-green-700">70%</span>
+        of the construction work has been successfully completed.
+      </p>
+    </div>
+
+    <div class="pl-1 text-green-600">↓</div>
+
+    <!-- Step 6 -->
+    <div class="relative">
+      <p class="text-gray-700 leading-relaxed">
+        With the blessings of the Lord and the continued support of devotees,
+        the remaining work will soon be completed, allowing this temple
+        to shine as a center of spiritual light.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+
 
 </main>
-<!-- FOOTER -->
-<footer class="bg-[#2b0f0c] text-gray-200 mt-16">
+<div id="footer"></div>
 
-  <!-- Top Footer -->
-  <div class="max-w-7xl mx-auto px-4 py-12
-              grid grid-cols-1 md:grid-cols-3 gap-10">
+<script>
+  fetch("footer.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("footer").innerHTML = data;
+    });
+</script>
 
-    <!-- Column 1: Temple Info -->
-    <div>
-      <h3 class="text-lg font-bold mb-4 text-white">
-        🛕 ஸ்ரீ ஏகாம்பரநாதர் ஆலயம்
-      </h3>
-      <p class="text-sm leading-relaxed text-gray-300">
-        A sacred place dedicated to devotion, tradition, and community service.
-        Our mission is to preserve spiritual values and complete the temple
-        construction with the blessings of devotees.
-      </p>
-    </div>
+<script>
+  function showEnglish() {
+    document.getElementById("contentEng").classList.remove("hidden");
+    document.getElementById("contentTam").classList.add("hidden");
 
-    <!-- Column 2: Quick Links -->
-    <div>
-      <h3 class="text-lg font-bold mb-4 text-white">
-        Quick Links
-      </h3>
-      <ul class="space-y-2 text-sm">
-        <li>
-          <a href="index.html" class="hover:text-white transition">Home</a>
-        </li>
-        <li>
-          <a href="about.html" class="hover:text-white transition">About</a>
-        </li>
-        <li>
-          <a href="gallery.html" class="hover:text-white transition">Gallery</a>
-        </li>
-        <li>
-          <a href="contact.html" class="hover:text-white transition">Contact</a>
-        </li>
-        <li>
-          <a href="donate.html" class="hover:text-white transition">Donate</a>
-        </li>
-      </ul>
-    </div>
+    document.getElementById("btnEng").classList.add("bg-[#7b2d26]", "text-white");
+    document.getElementById("btnEng").classList.remove("bg-gray-200", "text-gray-700");
 
-    <!-- Column 3: Contact -->
-    <div>
-      <h3 class="text-lg font-bold mb-4 text-white">
-        Contact Details
-      </h3>
-      <ul class="space-y-3 text-sm text-gray-300">
-        <li>📍 திருவானைக்கா மடம், நெவி நகர்,<br>திருவள்ளூர், தமிழ்நாடு</li>
-        <li>📞 +91 9XXXXXXXXX</li>
-        <li>📧 temple@email.com</li>
-      </ul>
-    </div>
+    document.getElementById("btnTam").classList.add("bg-gray-200", "text-gray-700");
+    document.getElementById("btnTam").classList.remove("bg-[#7b2d26]", "text-white");
+  }
 
-  </div>
+  function showTamil() {
+    document.getElementById("contentTam").classList.remove("hidden");
+    document.getElementById("contentEng").classList.add("hidden");
 
-  <!-- Bottom Footer -->
-  <div class="border-t border-white/10">
-    <div class="max-w-7xl mx-auto px-4 py-4
-                flex flex-col md:flex-row
-                items-center justify-between
-                text-sm text-gray-400">
+    document.getElementById("btnTam").classList.add("bg-[#7b2d26]", "text-white");
+    document.getElementById("btnTam").classList.remove("bg-gray-200", "text-gray-700");
 
-      <p>
-        © 2025 ஸ்ரீ ஏகாம்பரநாதர் ஆலயம். All rights reserved.
-      </p>
-
-      <p class="mt-2 md:mt-0">
-        Built with devotion ❤️
-      </p>
-
-    </div>
-  </div>
-
-</footer>
+    document.getElementById("btnEng").classList.add("bg-gray-200", "text-gray-700");
+    document.getElementById("btnEng").classList.remove("bg-[#7b2d26]", "text-white");
+  }
+</script>
 
 </body>
 </html>
